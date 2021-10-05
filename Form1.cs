@@ -17,6 +17,34 @@ namespace laba_2_3
             InitializeComponent();
         }
 
+        public class Logic
+        {
+            public static string Comp(string word1, string word2)
+            {
+                string nrword1 = "";
+                for (int i = 0; i < word1.Length; i++)
+                {
+                    if (nrword1.IndexOf(word1[i]) == -1)
+                    {
+                        nrword1 = nrword1 + word1[i];
+                    }
+                }
+                string result = "";
+                for (int i = 0; i < nrword1.Length; i++)
+                {
+                    if (word2.IndexOf(nrword1[i]) == -1)
+                    {
+                        result = result + "нет ";
+                    }
+                    else
+                    {
+                        result = result + "да ";
+                    }
+                }
+                return result;
+            }
+        }
+
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 

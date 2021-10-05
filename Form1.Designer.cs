@@ -121,6 +121,7 @@ namespace laba_2_3
             this.Calc.TabIndex = 6;
             this.Calc.Text = "Рассчитать";
             this.Calc.UseVisualStyleBackColor = false;
+            this.Calc.Click += new System.EventHandler(this.Calc_Click);
             // 
             // Form1
             // 

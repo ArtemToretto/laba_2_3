@@ -69,5 +69,13 @@ namespace laba_2_3
         {
 
         }
+
+        private void Calc_Click(object sender, EventArgs e)
+        {
+            if (txtWord1.Text!=String.Empty && txtWord2.Text!=String.Empty)
+            {
+              txtResult.Text=(Logic.Comp(txtWord1.Text, txtWord2.Text));
+            }
+        }
     }
 }

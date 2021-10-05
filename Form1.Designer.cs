@@ -51,7 +51,7 @@ namespace laba_2_3
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(403, 152);
+            this.groupBox1.Size = new System.Drawing.Size(371, 152);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Определение вхождения букв";
@@ -83,7 +83,6 @@ namespace laba_2_3
             // txtResult
             // 
             this.txtResult.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtResult.Enabled = false;
             this.txtResult.Location = new System.Drawing.Point(111, 113);
             this.txtResult.Name = "txtResult";
             this.txtResult.ReadOnly = true;
@@ -131,7 +130,7 @@ namespace laba_2_3
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(427, 177);
+            this.ClientSize = new System.Drawing.Size(395, 177);
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
             this.Name = "Form1";

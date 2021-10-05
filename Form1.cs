@@ -15,6 +15,8 @@ namespace laba_2_3
         public Form1()
         {
             InitializeComponent();
+            txtWord1.Text = Properties.Settings.Default.word1;
+            txtWord2.Text = Properties.Settings.Default.word2;
         }
 
         public class Logic
@@ -80,6 +82,9 @@ namespace laba_2_3
             {
                 MessageBox.Show("Не все поля заполнены!");
             }
+            Properties.Settings.Default.word1 = txtWord1.Text;
+            Properties.Settings.Default.word2 = txtWord2.Text;
+            Properties.Settings.Default.Save();
         }
     }
 }

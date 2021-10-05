@@ -76,6 +76,10 @@ namespace laba_2_3
             {
               txtResult.Text=(Logic.Comp(txtWord1.Text, txtWord2.Text));
             }
+            else
+            {
+                MessageBox.Show("Не все поля заполнены!");
+            }
         }
     }
 }

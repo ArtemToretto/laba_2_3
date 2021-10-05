@@ -30,13 +30,13 @@ namespace laba_2_3
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Calc = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtResult = new System.Windows.Forms.TextBox();
             this.txtWord2 = new System.Windows.Forms.TextBox();
             this.txtWord1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.Calc = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,10 +57,36 @@ namespace laba_2_3
             this.groupBox1.Text = "Определение вхождения букв";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // Calc
+            // 
+            this.Calc.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Calc.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.Calc.Location = new System.Drawing.Point(193, 87);
+            this.Calc.Name = "Calc";
+            this.Calc.Size = new System.Drawing.Size(80, 21);
+            this.Calc.TabIndex = 6;
+            this.Calc.Text = "Рассчитать";
+            this.Calc.UseVisualStyleBackColor = false;
+            this.Calc.Click += new System.EventHandler(this.Calc_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(32, 114);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(73, 19);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Результат:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // txtResult
             // 
+            this.txtResult.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtResult.Enabled = false;
             this.txtResult.Location = new System.Drawing.Point(111, 113);
             this.txtResult.Name = "txtResult";
+            this.txtResult.ReadOnly = true;
             this.txtResult.Size = new System.Drawing.Size(247, 23);
             this.txtResult.TabIndex = 4;
             this.txtResult.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
@@ -99,29 +125,6 @@ namespace laba_2_3
             this.label1.TabIndex = 1;
             this.label1.Text = "Первое слово:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(32, 114);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 19);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Результат:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // Calc
-            // 
-            this.Calc.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Calc.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.Calc.Location = new System.Drawing.Point(193, 87);
-            this.Calc.Name = "Calc";
-            this.Calc.Size = new System.Drawing.Size(80, 21);
-            this.Calc.TabIndex = 6;
-            this.Calc.Text = "Рассчитать";
-            this.Calc.UseVisualStyleBackColor = false;
-            this.Calc.Click += new System.EventHandler(this.Calc_Click);
             // 
             // Form1
             // 
